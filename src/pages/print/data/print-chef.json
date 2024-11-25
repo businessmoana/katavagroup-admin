@@ -1,0 +1,86 @@
+[
+    {
+        "first_name": "Aleksandra",
+        "last_name": "Kosic",
+        "phone_number": "0652040319",
+        "user_role": "admin"
+    },
+    {
+        "first_name": "Ba",
+        "last_name": "Nyat",
+        "phone_number": "",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Htun",
+        "last_name": "Win",
+        "phone_number": "",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Ivan",
+        "last_name": "Dekic",
+        "phone_number": "773-818-3011",
+        "user_role": "admin"
+    },
+    {
+        "first_name": "Khine",
+        "last_name": "Maung",
+        "phone_number": "773-742-5701",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Khine Tham Shwe",
+        "last_name": "Hlaing",
+        "phone_number": "773-627-6152",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Mihajlo",
+        "last_name": "Nedeljkovic",
+        "phone_number": "7738183011",
+        "user_role": "admin"
+    },
+    {
+        "first_name": "Myo Khine",
+        "last_name": "Zin",
+        "phone_number": "773-796-0212",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Nay",
+        "last_name": "Yein",
+        "phone_number": "773-757-3198",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Nyi Nyi",
+        "last_name": "Aung",
+        "phone_number": "+1 (708) 986-2193",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Soe",
+        "last_name": "Than",
+        "phone_number": "917-702-9057",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Thi Ha",
+        "last_name": "Zaw",
+        "phone_number": "",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Wai",
+        "last_name": "",
+        "phone_number": "",
+        "user_role": "manager"
+    },
+    {
+        "first_name": "Zaw Min",
+        "last_name": "Oo",
+        "phone_number": "6305049063",
+        "user_role": "manager"
+    }
+]

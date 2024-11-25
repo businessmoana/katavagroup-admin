@@ -1,0 +1,28 @@
+{
+    "sushi": {
+        "company_name": "Hachi Sushi LLC",
+        "address": "716 Vandustrial Dr",
+        "place": "Westmont, Illinois 60559",
+        "company_phone": "773-818-3011"
+    },
+    "market": {
+        "company_name": "PETES FRESH MARKET",
+        "company_address": "4333 S Pulaski Rd",
+        "place": "Chicago, IL 60632",
+        "company_phone": "(773) 843-1400 ext. 4421"
+    },
+    "zaglavlje": {
+        "invoice_date": "Nov 8th 2024",
+        "location_name": "PFM 05",
+        "start_date": "07/12/23",
+        "end_date": "07/25/23",
+        "invoice_number": "HS_PFM 05072523"
+    },
+    "salesDetail": {
+        "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+        "end_date_item": "07/18/23",
+        "sales": "6299.54",
+        "commission": "70.00",
+        "amount": "4409.68"
+    }
+}

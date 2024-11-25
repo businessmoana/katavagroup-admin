@@ -1,0 +1,34 @@
+
+.container {
+  font-size: 15px;
+}
+
+.div_naslov {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table_print {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table_print tr td,
+.table_print tr th { /* Prepend .table_print to th selector */
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  padding-bottom: 10px;
+}
+
+.table_print tr th {
+  background-color: rgb(241, 239, 234);
+  color: #000000;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.align_right {
+  text-align: right;
+}

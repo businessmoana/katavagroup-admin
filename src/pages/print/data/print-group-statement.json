@@ -1,0 +1,188 @@
+{
+    "sushi": {
+        "company_name": "Hachi Sushi LLC",
+        "address": "716 Vandustrial Dr",
+        "place": "Westmont, Illinois 60559",
+        "company_phone": "773-818-3011"
+    },
+    "locationDetail": [
+        {
+            "chef_name": "Khine Tham Shwe Hlaing",
+            "company_name": "Hlaing Family LLC",
+            "location_name": "PFM 03",
+            "location_address": "4343 S Pulaski  Rd, Chicago, IL 60632",
+            "approved_date": "08/02/23",
+            "start_date": "07/12/23",
+            "end_date": "07/25/23",
+            "orders_id": "958,965"
+        },
+        {
+            "chef_name": "Nyi Nyi Aung",
+            "company_name": "Khaing Soe Hein LLC",
+            "location_name": "PFM 05",
+            "location_address": "3448 E 118th St, Chicago, IL 60617",
+            "approved_date": "08/02/23",
+            "start_date": "07/12/23",
+            "end_date": "07/25/23",
+            "orders_id": "958,965"
+        },
+        {
+            "chef_name": "Ba Nyat",
+            "company_name": "Ba Sushi LLC",
+            "location_name": "PFM 10",
+            "location_address": "2333 W Madison St, Chicago, IL 60612",
+            "approved_date": "07/25/23",
+            "start_date": "06/28/23",
+            "end_date": "07/11/23",
+            "orders_id": "958,965"
+        }
+    ],
+    "salesDetail": [
+        {
+            "salesItems": [
+                {
+                    "description": "PFM 03 Crepes Net Sales Commission for week ending on",
+                    "start_date_item": null,
+                    "end_date_item": null,
+                    "sales": "918.53",
+                    "chef_commission": "0.00",
+                    "amount": "0.00"
+                },
+                {
+                    "description": "PFM 03 Crepes Net Sales Commission for week ending on",
+                    "start_date_item": null,
+                    "end_date_item": null,
+                    "sales": "872.56",
+                    "chef_commission": "0.00",
+                    "amount": "0.00"
+                },
+                {
+                    "description": "PFM 03 Sushi Net Sales Commission for week ending on",
+                    "start_date_item": null,
+                    "end_date_item": null,
+                    "sales": "8701.89",
+                    "chef_commission": "64.00",
+                    "amount": "5569.21"
+                },
+                {
+                    "description": "PFM 03 Sushi Net Sales Commission for week ending on",
+                    "start_date_item": null,
+                    "end_date_item": null,
+                    "sales": "9245.20",
+                    "chef_commission": "64.00",
+                    "amount": "5916.93"
+                }
+            ]
+        },
+        {
+            "salesItems": [
+                {
+                    "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+                    "start_date_item": null,
+                    "end_date_item": null,
+                    "sales": "5912.71",
+                    "chef_commission": "66.00",
+                    "amount": "3902.39"
+                },
+                {
+                    "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+                    "start_date_item": null,
+                    "end_date_item": null,
+                    "sales": "6299.54",
+                    "chef_commission": "66.00",
+                    "amount": "4157.70"
+                }
+            ]
+        },
+        {
+            "salesItems": [
+                {
+                    "description": "PFM 10 Sushi Net Sales Commission for week ending on",
+                    "start_date_item": null,
+                    "end_date_item": null,
+                    "sales": "4419.93",
+                    "chef_commission": "64.00",
+                    "amount": "2828.76"
+                },
+                {
+                    "description": "PFM 10 Sushi Net Sales Commission for week ending on",
+                    "start_date_item": null,
+                    "end_date_item": null,
+                    "sales": "3875.12",
+                    "chef_commission": "64.00",
+                    "amount": "2480.08"
+                }
+            ]
+        }
+    ],
+    "otherDetail": [
+        {
+            "salesItems": [
+                {
+                    "description": "PFM 03 Crepes Net Sales Commission for week ending on",
+                    "date_period": null,
+                    "sales": "918.53",
+                    "chef_commission": "0.00",
+                    "amount": "0.00"
+                },
+                {
+                    "description": "PFM 03 Crepes Net Sales Commission for week ending on",
+                    "date_period": null,
+                    "sales": "872.56",
+                    "chef_commission": "0.00",
+                    "amount": "0.00"
+                },
+                {
+                    "description": "PFM 03 Sushi Net Sales Commission for week ending on",
+                    "date_period": null,
+                    "sales": "8701.89",
+                    "chef_commission": "64.00",
+                    "amount": "5569.21"
+                },
+                {
+                    "description": "PFM 03 Sushi Net Sales Commission for week ending on",
+                    "date_period": null,
+                    "sales": "9245.20",
+                    "chef_commission": "64.00",
+                    "amount": "5916.93"
+                }
+            ]
+        },
+        {
+            "salesItems": [
+                {
+                    "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+                    "date_period": null,
+                    "sales": "5912.71",
+                    "chef_commission": "66.00",
+                    "amount": "3902.39"
+                },
+                {
+                    "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+                    "date_period": null,
+                    "sales": "6299.54",
+                    "chef_commission": "66.00",
+                    "amount": "4157.70"
+                }
+            ]
+        },
+        {
+            "salesItems": [
+                {
+                    "description": "PFM 10 Sushi Net Sales Commission for week ending on",
+                    "date_period": null,
+                    "sales": "4419.93",
+                    "chef_commission": "64.00",
+                    "amount": "2828.76"
+                },
+                {
+                    "description": "PFM 10 Sushi Net Sales Commission for week ending on",
+                    "date_period": null,
+                    "sales": "3875.12",
+                    "chef_commission": "64.00",
+                    "amount": "2480.08"
+                }
+            ]
+        }
+    ]
+}

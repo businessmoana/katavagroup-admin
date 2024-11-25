@@ -1,0 +1,43 @@
+{
+    "sushi": {
+        "company_name": "Hachi Sushi LLC",
+        "address": "716 Vandustrial Dr",
+        "place": "Westmont, Illinois 60559",
+        "company_phone": "773-818-3011"
+    },
+    "salesDetail": {
+        "chef_name": "Nyi Nyi Aung",
+        "company_name": "Khaing Soe Hein LLC",
+        "location_name": "PFM 05",
+        "location_address": "3448 E 118th St, Chicago, IL 60617",
+        "approved_date": "08/02/23",
+        "start_date": "07/12/23",
+        "end_date": "07/25/23",
+        "orders_id": "",
+        "salesItems": [
+            {
+                "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+                "start_date_item": null,
+                "end_date_item": null,
+                "sales": "6299.54",
+                "chef_commission": "66.00",
+                "extended_price": "4157.70"
+            },
+            {
+                "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+                "start_date_item": null,
+                "end_date_item": null,
+                "sales": "5912.71",
+                "chef_commission": "66.00",
+                "extended_price": "3902.39"
+            }
+        ]
+    },
+    "otherDetail": {
+        "description": "PFM 05 Business Insurance",
+        "date_period": "Current Period",
+        "sales": "-36.00",
+        "commission": "100.00",
+        "amount": "-36.00"
+    }
+}

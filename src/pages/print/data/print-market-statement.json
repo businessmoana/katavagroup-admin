@@ -1,0 +1,454 @@
+{
+    "sushi": {
+        "company_name": "Hachi Sushi LLC",
+        "address": "716 Vandustrial Dr",
+        "place": "Westmont, Illinois 60559",
+        "company_phone": "773-818-3011"
+    },
+    "market": {
+        "company_name": "PETES FRESH MARKET",
+        "company_address": "4333 S Pulaski Rd",
+        "place": "Chicago, IL 60632",
+        "company_phone": "(773) 843-1400 ext. 4421"
+    },
+    "zaglavlje": [
+        {
+            "statement_date": "Nov 9th 2024",
+            "locations": null,
+            "start_date": null,
+            "end_date": null
+        }
+    ],
+    "salesDetail": [
+        {
+            "sales_id": 45,
+            "items_count": 2,
+            "sum_sales": "1656.18",
+            "sum_amount": "1159.33",
+            "salesItems": [
+                {
+                    "description": "PFM 01 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "843.33",
+                    "commission": "70.00",
+                    "amount": "590.33"
+                },
+                {
+                    "description": "PFM 01 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "812.85",
+                    "commission": "70.00",
+                    "amount": "569.00"
+                }
+            ],
+            "location": {
+                "id": 6,
+                "location_number": "01",
+                "location_name": "PFM 01",
+                "location_address": "5724 S Kedzie Ave, Chicago, IL 60629",
+                "license_permit_due": null,
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 5
+            }
+        },
+        {
+            "sales_id": 44,
+            "items_count": 2,
+            "sum_sales": "6575.69",
+            "sum_amount": "4602.99",
+            "salesItems": [
+                {
+                    "description": "PFM 02 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "3211.95",
+                    "commission": "70.00",
+                    "amount": "2248.37"
+                },
+                {
+                    "description": "PFM 02 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "3363.74",
+                    "commission": "70.00",
+                    "amount": "2354.62"
+                }
+            ],
+            "location": {
+                "id": 1,
+                "location_number": "02",
+                "location_name": "PFM 02",
+                "location_address": "4700 S Kedzie Ave, Chicago, IL 60632",
+                "license_permit_due": "2024-12-15",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 43,
+            "items_count": 2,
+            "sum_sales": "6150.99",
+            "sum_amount": "4305.69",
+            "salesItems": [
+                {
+                    "description": "PFM 03 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "3247.70",
+                    "commission": "70.00",
+                    "amount": "2273.39"
+                },
+                {
+                    "description": "PFM 03 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "2903.29",
+                    "commission": "70.00",
+                    "amount": "2032.30"
+                }
+            ],
+            "location": {
+                "id": 5,
+                "location_number": "03",
+                "location_name": "PFM 03",
+                "location_address": "4343 S Pulaski  Rd, Chicago, IL 60632",
+                "license_permit_due": "2024-12-15",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 42,
+            "items_count": 2,
+            "sum_sales": "1422.57",
+            "sum_amount": "995.80",
+            "salesItems": [
+                {
+                    "description": "PFM 04 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "708.04",
+                    "commission": "70.00",
+                    "amount": "495.63"
+                },
+                {
+                    "description": "PFM 04 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "714.53",
+                    "commission": "70.00",
+                    "amount": "500.17"
+                }
+            ],
+            "location": {
+                "id": 2,
+                "location_number": "04",
+                "location_name": "PFM 04",
+                "location_address": "5838 S Pulaski Rd, Chicago, IL 60629",
+                "license_permit_due": null,
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 5
+            }
+        },
+        {
+            "sales_id": 41,
+            "items_count": 2,
+            "sum_sales": "5603.68",
+            "sum_amount": "3922.58",
+            "salesItems": [
+                {
+                    "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "2861.64",
+                    "commission": "70.00",
+                    "amount": "2003.15"
+                },
+                {
+                    "description": "PFM 05 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "2742.04",
+                    "commission": "70.00",
+                    "amount": "1919.43"
+                }
+            ],
+            "location": {
+                "id": 3,
+                "location_number": "05",
+                "location_name": "PFM 05",
+                "location_address": "3448 E 118th St, Chicago, IL 60617",
+                "license_permit_due": "2024-12-15",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 40,
+            "items_count": 2,
+            "sum_sales": "9854.16",
+            "sum_amount": "6897.91",
+            "salesItems": [
+                {
+                    "description": "PFM 06 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "3839.56",
+                    "commission": "70.00",
+                    "amount": "2687.69"
+                },
+                {
+                    "description": "PFM 06 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "6014.60",
+                    "commission": "70.00",
+                    "amount": "4210.22"
+                }
+            ],
+            "location": {
+                "id": 4,
+                "location_number": "06",
+                "location_name": "PFM 06",
+                "location_address": "2526 W Cermak Rd, Chicago, IL 60608",
+                "license_permit_due": "2024-12-15",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 39,
+            "items_count": 2,
+            "sum_sales": "3391.51",
+            "sum_amount": "2374.06",
+            "salesItems": [
+                {
+                    "description": "PFM 07 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "1631.75",
+                    "commission": "70.00",
+                    "amount": "1142.23"
+                },
+                {
+                    "description": "PFM 07 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "1759.76",
+                    "commission": "70.00",
+                    "amount": "1231.83"
+                }
+            ],
+            "location": {
+                "id": 7,
+                "location_number": "07",
+                "location_name": "PFM 07",
+                "location_address": "1968 Sibley Blvd, Calumet City, IL 60409",
+                "license_permit_due": "2024-12-31",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 38,
+            "items_count": 2,
+            "sum_sales": "5755.25",
+            "sum_amount": "4028.67",
+            "salesItems": [
+                {
+                    "description": "PFM 08 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "2973.22",
+                    "commission": "70.00",
+                    "amount": "2081.25"
+                },
+                {
+                    "description": "PFM 08 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "2782.03",
+                    "commission": "70.00",
+                    "amount": "1947.42"
+                }
+            ],
+            "location": {
+                "id": 8,
+                "location_number": "08",
+                "location_name": "PFM 08",
+                "location_address": "3720 W 95th St, Evergreen Park, IL 60805",
+                "license_permit_due": "2024-12-31",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 37,
+            "items_count": 2,
+            "sum_sales": "8754.52",
+            "sum_amount": "6128.17",
+            "salesItems": [
+                {
+                    "description": "PFM 09 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "4028.78",
+                    "commission": "70.00",
+                    "amount": "2820.15"
+                },
+                {
+                    "description": "PFM 09 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "4725.74",
+                    "commission": "70.00",
+                    "amount": "3308.02"
+                }
+            ],
+            "location": {
+                "id": 9,
+                "location_number": "09",
+                "location_name": "PFM 09",
+                "location_address": "17W675 W Roosevelt Rd, Oakbrook Terrace, IL 60181",
+                "license_permit_due": "2020-04-06",
+                "note": "Du Page County Health Permit",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 36,
+            "items_count": 2,
+            "sum_sales": "6441.02",
+            "sum_amount": "4508.71",
+            "salesItems": [
+                {
+                    "description": "PFM 10 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "3240.93",
+                    "commission": "70.00",
+                    "amount": "2268.65"
+                },
+                {
+                    "description": "PFM 10 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "3200.09",
+                    "commission": "70.00",
+                    "amount": "2240.06"
+                }
+            ],
+            "location": {
+                "id": 10,
+                "location_number": "10",
+                "location_name": "PFM 10",
+                "location_address": "2333 W Madison St, Chicago, IL 60612",
+                "license_permit_due": "2024-12-15",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 35,
+            "items_count": 2,
+            "sum_sales": "12614.82",
+            "sum_amount": "8830.37",
+            "salesItems": [
+                {
+                    "description": "PFM 11 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "6286.89",
+                    "commission": "70.00",
+                    "amount": "4400.82"
+                },
+                {
+                    "description": "PFM 11 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "6327.93",
+                    "commission": "70.00",
+                    "amount": "4429.55"
+                }
+            ],
+            "location": {
+                "id": 11,
+                "location_number": "11",
+                "location_name": "PFM 11",
+                "location_address": "10280 S Harlem Ave, Bridgeview, IL 60455",
+                "license_permit_due": "2024-12-31",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 34,
+            "items_count": 2,
+            "sum_sales": "14835.98",
+            "sum_amount": "10385.19",
+            "salesItems": [
+                {
+                    "description": "PFM 12 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "7731.47",
+                    "commission": "70.00",
+                    "amount": "5412.03"
+                },
+                {
+                    "description": "PFM 12 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "7104.51",
+                    "commission": "70.00",
+                    "amount": "4973.16"
+                }
+            ],
+            "location": {
+                "id": 12,
+                "location_number": "12",
+                "location_name": "PFM 12",
+                "location_address": "259 Lake St, Oak Park, IL 60302",
+                "license_permit_due": "2025-03-31",
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        },
+        {
+            "sales_id": 33,
+            "items_count": 4,
+            "sum_sales": "18540.05",
+            "sum_amount": "13171.74",
+            "salesItems": [
+                {
+                    "description": "PFM 13 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "7035.98",
+                    "commission": "70.00",
+                    "amount": "4925.19"
+                },
+                {
+                    "description": "PFM 13 Wok Net Sales Commission for week ending on",
+                    "end_date_item": "10/15/19",
+                    "sales": "2016.33",
+                    "commission": "75.00",
+                    "amount": "1512.25"
+                },
+                {
+                    "description": "PFM 13 Sushi Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "7630.14",
+                    "commission": "70.00",
+                    "amount": "5341.10"
+                },
+                {
+                    "description": "PFM 13 Wok Net Sales Commission for week ending on",
+                    "end_date_item": "10/08/19",
+                    "sales": "1857.60",
+                    "commission": "75.00",
+                    "amount": "1393.20"
+                }
+            ],
+            "location": {
+                "id": 13,
+                "location_number": "13",
+                "location_name": "PFM 13",
+                "location_address": "840 Plainfield Rd, Willowbrook, IL 60527",
+                "license_permit_due": null,
+                "note": "",
+                "status": 0,
+                "sif_price_group_id": 2
+            }
+        }
+    ]
+}

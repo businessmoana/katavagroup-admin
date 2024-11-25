@@ -1,0 +1,145 @@
+[
+    {
+        "id": 6,
+        "location_number": "01",
+        "location_name": "PFM 01",
+        "location_address": "5724 S Kedzie Ave, Chicago, IL 60629",
+        "license_permit_due": null,
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 5,
+        "datum": ""
+    },
+    {
+        "id": 1,
+        "location_number": "02",
+        "location_name": "PFM 02",
+        "location_address": "4700 S Kedzie Ave, Chicago, IL 60632",
+        "license_permit_due": "2024-12-15",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "12/15/2024"
+    },
+    {
+        "id": 5,
+        "location_number": "03",
+        "location_name": "PFM 03",
+        "location_address": "4343 S Pulaski  Rd, Chicago, IL 60632",
+        "license_permit_due": "2024-12-15",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "12/15/2024"
+    },
+    {
+        "id": 2,
+        "location_number": "04",
+        "location_name": "PFM 04",
+        "location_address": "5838 S Pulaski Rd, Chicago, IL 60629",
+        "license_permit_due": null,
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 5,
+        "datum": ""
+    },
+    {
+        "id": 3,
+        "location_number": "05",
+        "location_name": "PFM 05",
+        "location_address": "3448 E 118th St, Chicago, IL 60617",
+        "license_permit_due": "2024-12-15",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "12/15/2024"
+    },
+    {
+        "id": 4,
+        "location_number": "06",
+        "location_name": "PFM 06",
+        "location_address": "2526 W Cermak Rd, Chicago, IL 60608",
+        "license_permit_due": "2024-12-15",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "12/15/2024"
+    },
+    {
+        "id": 7,
+        "location_number": "07",
+        "location_name": "PFM 07",
+        "location_address": "1968 Sibley Blvd, Calumet City, IL 60409",
+        "license_permit_due": "2024-12-31",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "12/31/2024"
+    },
+    {
+        "id": 8,
+        "location_number": "08",
+        "location_name": "PFM 08",
+        "location_address": "3720 W 95th St, Evergreen Park, IL 60805",
+        "license_permit_due": "2024-12-31",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "12/31/2024"
+    },
+    {
+        "id": 9,
+        "location_number": "09",
+        "location_name": "PFM 09",
+        "location_address": "17W675 W Roosevelt Rd, Oakbrook Terrace, IL 60181",
+        "license_permit_due": "2020-04-06",
+        "note": "Du Page County Health Permit",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "04/06/2020"
+    },
+    {
+        "id": 10,
+        "location_number": "10",
+        "location_name": "PFM 10",
+        "location_address": "2333 W Madison St, Chicago, IL 60612",
+        "license_permit_due": "2024-12-15",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "12/15/2024"
+    },
+    {
+        "id": 11,
+        "location_number": "11",
+        "location_name": "PFM 11",
+        "location_address": "10280 S Harlem Ave, Bridgeview, IL 60455",
+        "license_permit_due": "2024-12-31",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "12/31/2024"
+    },
+    {
+        "id": 12,
+        "location_number": "12",
+        "location_name": "PFM 12",
+        "location_address": "259 Lake St, Oak Park, IL 60302",
+        "license_permit_due": "2025-03-31",
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": "03/31/2025"
+    },
+    {
+        "id": 13,
+        "location_number": "13",
+        "location_name": "PFM 13",
+        "location_address": "840 Plainfield Rd, Willowbrook, IL 60527",
+        "license_permit_due": null,
+        "note": "",
+        "status": 0,
+        "sif_price_group_id": 2,
+        "datum": ""
+    }
+]

@@ -1,0 +1,55 @@
+{
+    "sushi": {
+        "company_name": "Hachi Sushi LLC",
+        "address": "716 Vandustrial Dr",
+        "place": "Westmont, Illinois 60559",
+        "company_phone": "773-818-3011"
+    },
+    "orderDetails": {
+        "company_name": "Yiyi Sushi, LLC",
+        "address": "632 Willow Wood Dr Unit 9-301, Carol Stream, IL 60188",
+        "company_phone": "402-301-2433",
+        "location_name": "PFM 08",
+        "location_address": "3720 W 95th St, Evergreen Park, IL 60805",
+        "invoice_date": "Nov 8th 2024",
+        "invoice_number": "PFM 08_102124",
+        "order_date": "10/21/24",
+        "ship_date": "10/21/24",
+        "delivery_option": 0,
+        "shipping": "0.00",
+        "pallet_cost": "0.00",
+        "tax": "0.00",
+        "orderItems": [
+            {
+                "kolicina": "2.00",
+                "price": "30.00",
+                "extended_price": "60.00",
+                "productItem": {
+                    "package": "40 LBS"
+                },
+                "product": {
+                    "item_number": "26109",
+                    "item_name": "Rice: Sushi Rice",
+                    "sifKategorija": {
+                        "kategorija_naziv": "Dry Goods"
+                    }
+                }
+            },
+            {
+                "kolicina": "10.00",
+                "price": "35.00",
+                "extended_price": "350.00",
+                "productItem": {
+                    "package": "20 LBS"
+                },
+                "product": {
+                    "item_number": "22233",
+                    "item_name": "Ginger - White",
+                    "sifKategorija": {
+                        "kategorija_naziv": "Dry Goods"
+                    }
+                }
+            }
+        ]
+    }
+}

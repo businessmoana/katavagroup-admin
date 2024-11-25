@@ -1,0 +1,381 @@
+.exclude-tailwind * {
+  line-height: 2;
+  vertical-align: middle;
+}
+
+.exclude-tailwind a:link {
+  text-decoration: underline;
+  cursor: auto;
+}
+.exclude-tailwind a:visited {
+  text-decoration: underline;
+  cursor: auto;
+}
+.exclude-tailwind address {
+  display: block;
+  font-style: italic;
+}
+.exclude-tailwind area {
+  display: none;
+}
+.exclude-tailwind article {
+  display: block;
+}
+.exclude-tailwind aside {
+  display: block;
+}
+.exclude-tailwind b {
+  font-weight: bold;
+}
+.exclude-tailwind bdo {
+  unicode-bidi: bidi-override;
+}
+.exclude-tailwind blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.exclude-tailwind body {
+  display: block;
+  margin: 8px;
+}
+.exclude-tailwind body:focus {
+  outline: none;
+}
+.exclude-tailwind caption {
+  display: table-caption;
+  text-align: center;
+}
+.exclude-tailwind cite {
+  font-style: italic;
+}
+.exclude-tailwind code {
+  font-family: monospace;
+}
+.exclude-tailwind col {
+  display: table-column;
+}
+.exclude-tailwind colgroup {
+  display: table-column-group;
+}
+.exclude-tailwind datalist {
+  display: none;
+}
+.exclude-tailwind dd {
+  display: block;
+  margin-left: 40px;
+}
+.exclude-tailwind del {
+  text-decoration: line-through;
+}
+.exclude-tailwind details {
+  display: block;
+}
+.exclude-tailwind dfn {
+  font-style: italic;
+}
+.exclude-tailwind div {
+  display: block;
+}
+.exclude-tailwind dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.exclude-tailwind dt {
+  display: block;
+}
+.exclude-tailwind em {
+  font-style: italic;
+}
+.exclude-tailwind embed:focus {
+  outline: none;
+}
+.exclude-tailwind fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.exclude-tailwind figcaption {
+  display: block;
+}
+.exclude-tailwind figure {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.exclude-tailwind footer {
+  display: block;
+}
+.exclude-tailwind form {
+  display: block;
+  margin-top: 0em;
+}
+.exclude-tailwind h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.exclude-tailwind h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.exclude-tailwind h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.exclude-tailwind h4 {
+  display: block;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.exclude-tailwind h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.exclude-tailwind h6 {
+  display: block;
+  font-size: 0.67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.exclude-tailwind head {
+  display: none;
+}
+.exclude-tailwind header {
+  display: block;
+}
+.exclude-tailwind hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+.exclude-tailwind html {
+  display: block;
+}
+.exclude-tailwind html:focus {
+  outline: none;
+}
+.exclude-tailwind i {
+  font-style: italic;
+}
+.exclude-tailwind iframe:focus {
+  outline: none;
+}
+.exclude-tailwind iframe[seamless] {
+  display: block;
+}
+.exclude-tailwind img {
+  display: inline-block;
+}
+.exclude-tailwind ins {
+  text-decoration: underline;
+}
+.exclude-tailwind kbd {
+  font-family: monospace;
+}
+.exclude-tailwind label {
+  cursor: default;
+}
+.exclude-tailwind legend {
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+}
+.exclude-tailwind li {
+  display: list-item;
+}
+.exclude-tailwind link {
+  display: none;
+}
+.exclude-tailwind map {
+  display: inline;
+}
+.exclude-tailwind mark {
+  background-color: yellow;
+  color: black;
+}
+.exclude-tailwind menu {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.exclude-tailwind nav {
+  display: block;
+}
+.exclude-tailwind object:focus {
+  outline: none;
+}
+.exclude-tailwind ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.exclude-tailwind output {
+  display: inline;
+}
+.exclude-tailwind p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.exclude-tailwind param {
+  display: none;
+}
+.exclude-tailwind pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
+.exclude-tailwind q {
+  display: inline;
+}
+.exclude-tailwind q::before {
+  content: open-quote;
+}
+.exclude-tailwind q::after {
+  content: close-quote;
+}
+.exclude-tailwind rt {
+  line-height: normal;
+}
+.exclude-tailwind s {
+  text-decoration: line-through;
+}
+.exclude-tailwind samp {
+  font-family: monospace;
+}
+.exclude-tailwind script {
+  display: none;
+}
+.exclude-tailwind section {
+  display: block;
+}
+.exclude-tailwind small {
+  font-size: smaller;
+}
+.exclude-tailwind strike {
+  text-decoration: line-through;
+}
+.exclude-tailwind strong {
+  font-weight: bold;
+}
+.exclude-tailwind style {
+  display: none;
+}
+.exclude-tailwind sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+.exclude-tailwind summary {
+  display: block;
+}
+.exclude-tailwind sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+.exclude-tailwind table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+}
+.exclude-tailwind tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.exclude-tailwind td {
+  display: table-cell;
+  vertical-align: middle;
+}
+.exclude-tailwind tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.exclude-tailwind th {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: center;
+}
+.exclude-tailwind thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.exclude-tailwind title {
+  display: none;
+}
+.exclude-tailwind tr {
+  display: table-row;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.exclude-tailwind u {
+  text-decoration: underline;
+}
+.exclude-tailwind ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.exclude-tailwind var {
+  font-style: italic;
+}

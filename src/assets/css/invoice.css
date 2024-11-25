@@ -1,0 +1,92 @@
+* {
+  font-size: 10px;
+}
+
+#table_header {
+  width: 100%;
+  font-size: 20px;
+}
+
+#table_info {
+  width: 100%;
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+#table_info_1 {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 13px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#table_info_2 {
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+#table_list {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 12px;
+  border-collapse: collapse;
+}
+
+#table_list tr th {
+  border: 1px solid #000;
+}
+
+#table_list tr td {
+  border: 1px solid #000;
+}
+
+.tr_background {
+  background-color: #EBF1DE;
+}
+
+#table_footer {
+  width: 100%;
+  margin-top: 100px;
+  font-size: 13px;
+  border-top: 1px solid #000;
+}
+
+#table_footer_1 tr td {
+  border: 1px solid #000;
+}
+
+#table_footer_2 {
+  width: 100%;
+  background-color: #EBF1DE;
+}
+
+#table_footer_2 tr td {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#tr_background_footer {
+  background-color: #D8E4BC;
+}
+
+.table_price {
+  width: 100%;
+}
+
+.table_price tr td {
+  border: none !important;
+}
+
+#table_footer_3 {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+table {
+  border-spacing: 0px;
+}
