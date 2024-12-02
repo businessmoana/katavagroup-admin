@@ -127,6 +127,9 @@ export const API_ENDPOINTS = {
   PRINTGROUPSTATEMENT:'print-group-statement',
   PRINTMARKETSTATEMENT:'print-market-statement',
   PRINTLOCATION:'print-location',
-  PRINTPACKLIST:'print-pack-list'
+  PRINTPACKLIST:'print-pack-list',
+
+  REPORT:'admin/report',
+
 
 };

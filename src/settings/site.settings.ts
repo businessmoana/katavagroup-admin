@@ -94,11 +94,11 @@ export const siteSettings = {
                 label: 'Chefs Statement',
                 icon: '',
               },
-              {
-                href: Routes.groupChefsStatement,
-                label: 'Group Chefs Statement',
-                icon: '',
-              },
+              // {
+              //   href: Routes.groupChefsStatement,
+              //   label: 'Group Chefs Statement',
+              //   icon: '',
+              // },
             ],
           },
         ],
@@ -167,6 +167,41 @@ export const siteSettings = {
               {
                 href: Routes.dateInterval.list,
                 label: 'Date Interval',
+                icon: '',
+              },
+            ],
+          },
+        ],
+      },
+
+      report: {
+        href: '',
+        label: 'Report management',
+        icon: 'StoreNoticeIcon',
+        childMenu: [
+          {
+            href: '',
+            label: 'Report management',
+            icon: 'StoreNoticeIcon',
+            childMenu: [
+              {
+                href: Routes.invoiceSalesReport,
+                label: 'INVOICES vs SALES',
+                icon: '',
+              },
+              {
+                href: Routes.invoiceCombineReport,
+                label: 'Combined Invoices',
+                icon: '',
+              },
+              {
+                href: Routes.salesReport,
+                label: 'Sales Report',
+                icon: '',
+              },
+              {
+                href: Routes.averageSold,
+                label: 'Average Product Sold',
                 icon: '',
               },
             ],

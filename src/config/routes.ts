@@ -183,6 +183,10 @@ export const Routes = {
   },
   ownerDashboardShopTransferRequest: '/shop-transfer/vendor',
   printChef: '/print/print-chef',
+  invoiceSalesReport:'/report/invoice-sales',
+  invoiceCombineReport:'/report/invoice-combine',
+  salesReport:'/report/sales',
+  averageSold:'/report/average-product-sold'
 };
 
 function routesFactory(endpoint: string) {

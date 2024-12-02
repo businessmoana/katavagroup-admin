@@ -89,12 +89,14 @@ const SalesList = ({ sales, intervalId, dateInterval }: IProps) => {
               </a>
             )}
             {s_id == 0 && (
-              <Button
-                disabled
-                className="bg-opacity-0 border border-green-700 text-grey gap-3"
-              >
-                Invoice
-              </Button>
+              <a className="w-full h-12 md:w-auto md:ms-6">
+                <Button
+                  disabled
+                  className="bg-opacity-0 border border-green-700 text-grey gap-3"
+                >
+                  Invoice
+                </Button>
+              </a>
             )}
           </div>
         );

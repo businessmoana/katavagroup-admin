@@ -19,6 +19,6 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/print/print-chef/index.jsx", "src/pages/print/print-invoice/[invoiceId]/index.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/print/print-chef/index.jsx", "src/pages/print/print-invoice/[invoiceId]/[action].jsx"],
   "exclude": ["node_modules"]
 }

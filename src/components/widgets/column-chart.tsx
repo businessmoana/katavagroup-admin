@@ -90,7 +90,7 @@ const BarChart = ({
             '<span class="border-b border-b-slate-200 p-1">' +
             w?.globals?.labels[dataPointIndex] +
             '</span>' +
-            '<span class="p-1">' +
+            '<span class="p-1">$' +
             series[seriesIndex][dataPointIndex] +
             '</span>' +
             '</div>'
