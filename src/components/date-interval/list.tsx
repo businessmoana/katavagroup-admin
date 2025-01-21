@@ -42,6 +42,11 @@ const DateIntervalList = ({
     column: null,
   });
 
+  const formatDateToAmerican = (dateString:any) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US');
+  };
+
   const onHeaderClick = (column: string | null) => ({
     onClick: () => {
       onSort((currentSortDirection: SortOrder) =>
@@ -95,6 +100,9 @@ const DateIntervalList = ({
       align: 'center' as AlignType,
       width: 180,
       onHeaderCell: () => onHeaderClick('start_date'),
+      render: (start_date: any) => (
+        <div>{formatDateToAmerican(start_date)}</div>
+      ),
     },
     {
       title: (
@@ -113,6 +121,9 @@ const DateIntervalList = ({
       align: 'center' as AlignType,
       width: 180,
       onHeaderCell: () => onHeaderClick('end_date'),
+      render: (end_date: any) => (
+        <div>{formatDateToAmerican(end_date)}</div>
+      ),
     },
 
     {
@@ -198,7 +209,7 @@ const DateIntervalList = ({
           )}
           data={dateIntervals}
           rowKey="id"
-          scroll={{ x: 1000 }}
+          scroll={{ x: 10 }}
         />
       </div>
 

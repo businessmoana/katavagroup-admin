@@ -18,11 +18,27 @@ import LinkButton from '@/components/ui/link-button';
 import { Config } from '@/config';
 import { useLocationsQuery } from '@/data/location';
 import LocationList from '@/components/location/location-list';
+import Select from '@/components/ui/select/select';
 
 interface FilterOptions {
   name: string;
   value: boolean;
 }
+
+const limitOptions = [
+  {
+    value: 10,
+  },
+  {
+    value: 25,
+  },
+  {
+    value: 50,
+  },
+  {
+    value: 100,
+  },
+];
 
 export default function AllLocationListPage() {
   const { t } = useTranslation();
@@ -31,9 +47,10 @@ export default function AllLocationListPage() {
   const [page, setPage] = useState(1);
   const [filterType, setFilterType] = useState(true);
   const [orderBy, setOrder] = useState('');
+  const [limit, setLimit] = useState<any>(limitOptions[0]);
   const [sortedBy, setColumn] = useState<SortOrder>(SortOrder.Desc);
   const { locations, paginatorInfo, loading, error } = useLocationsQuery({
-    limit: 10,
+    limit: limit.value,
     page,
     orderBy,
     search: searchTerm,
@@ -55,11 +72,21 @@ export default function AllLocationListPage() {
   function handlePagination(current: any) {
     setPage(current);
   }
+  function handleLimit(current: any) {
+    setLimit(current);
+  }
   return (
     <>
       <Card className="mb-8 flex flex-col items-center justify-between md:flex-row">
-        <div className="mb-4 md:mb-0 md:w-1/4">
+        <div className="mb-4 md:mb-0 md:w-1/4 flex justify-center items-center gap-5">
           <PageHeading title={'Location'} />
+          <Select
+            options={limitOptions}
+            getOptionLabel={(option: any) => option.value}
+            getOptionValue={(option: any) => option.value}
+            onChange={handleLimit}
+            value={limit}
+          ></Select>
         </div>
 
         <div className="flex w-full flex-col items-center ms-auto md:w-1/2 md:flex-row">
@@ -96,7 +123,7 @@ export default function AllLocationListPage() {
         onPagination={handlePagination}
         onOrder={setOrder}
         onSort={setColumn}
-        is_active = {filterType}
+        is_active={filterType}
         isMultiCommissionRate={Boolean(
           settings?.options?.isMultiCommissionRate,
         )}

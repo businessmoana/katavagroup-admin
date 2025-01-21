@@ -135,8 +135,7 @@ const ChefOrdersList = ({
         <TitleWithSort
           title={'Order date'}
           ascending={
-            sortingObj.sort === SortOrder.Asc &&
-            sortingObj.column === 'datum'
+            sortingObj.sort === SortOrder.Asc && sortingObj.column === 'datum'
           }
           isActive={sortingObj.column === 'datum'}
         />
@@ -160,7 +159,8 @@ const ChefOrdersList = ({
         <TitleWithSort
           title={'Number of products'}
           ascending={
-            sortingObj.sort === SortOrder.Asc && sortingObj.column === 'br_proizvoda'
+            sortingObj.sort === SortOrder.Asc &&
+            sortingObj.column === 'br_proizvoda'
           }
           isActive={sortingObj.column === 'br_proizvoda'}
         />
@@ -177,7 +177,8 @@ const ChefOrdersList = ({
         <TitleWithSort
           title={'Sum price'}
           ascending={
-            sortingObj.sort === SortOrder.Asc && sortingObj.column === 'ukupna_cena'
+            sortingObj.sort === SortOrder.Asc &&
+            sortingObj.column === 'ukupna_cena'
           }
           isActive={sortingObj.column === 'ukupna_cena'}
         />
@@ -188,12 +189,22 @@ const ChefOrdersList = ({
       align: 'center' as AlignType,
       width: 180,
       onHeaderCell: () => onHeaderClick('ukupna_cena'),
-      render: function Render(ukupna_cena:any, record: any) {
-        return <div className="flex items-center font-medium justify-center">
-           <span className="truncate text-center">
-             {(Number(record.ukupna_cena) + Number(record.order_price)).toFixed(2)}
-           </span>
-         </div>
+      render: function Render(ukupna_cena: any, record: any) {
+        return (
+          <div>
+            <div className="flex justify-between">
+              <div>$</div>
+              <div className="items-end text-end">
+                {(
+                  Number(record.ukupna_cena) + Number(record.order_price)
+                ).toLocaleString('en-US', {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                })}
+              </div>
+            </div>
+          </div>
+        );
       },
     },
     {
@@ -205,10 +216,7 @@ const ChefOrdersList = ({
       width: 180,
       render: (id: string, { status }: Chef) => {
         return (
-          <ActionButtons
-            id={id}
-            detailsUrl={`${router.asPath}/${id}/view`}
-          />
+          <ActionButtons id={id} detailsUrl={`${router.asPath}/${id}/view`} />
         );
       },
     },
@@ -238,7 +246,7 @@ const ChefOrdersList = ({
           )}
           data={chefOrders}
           rowKey="id"
-          scroll={{ x: 1000 }}
+          scroll={{ x: 10 }}
         />
       </div>
 

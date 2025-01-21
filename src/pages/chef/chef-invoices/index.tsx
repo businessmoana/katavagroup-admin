@@ -12,16 +12,18 @@ import { useRouter } from 'next/router';
 import { useSettingsQuery } from '@/data/settings';
 import { useChefInvoicesQuery } from '@/data/chef-invoices';
 import ChefInvoicesList from '@/components/chef-invoices/chef-invoices-list';
+import Search from '@/components/common/search';
 
 
 export default function AllChefInvoicesPage() {
   const { t } = useTranslation();
   const { locale } = useRouter();
+  const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(1);
   const [orderBy, setOrder] = useState('');
   const [sortedBy, setColumn] = useState<SortOrder>(SortOrder.Desc);
   const { chefInvoices, paginatorInfo, loading, error } = useChefInvoicesQuery({
-    search: "",
+    search: searchTerm,
     limit: 10,
     page,
     orderBy,
@@ -31,6 +33,7 @@ export default function AllChefInvoicesPage() {
   const { settings, loading: loadingSettings } = useSettingsQuery({
     language: locale!,
   });
+
   if (loading || loadingSettings)
     return <Loader text={t('common:text-loading')} />;
   if (error) return <ErrorMessage message={error.message} />;
@@ -38,11 +41,21 @@ export default function AllChefInvoicesPage() {
   function handlePagination(current: any) {
     setPage(current);
   }
+
+  function handleSearch({ searchText }: { searchText: string }) {
+    setSearchTerm(searchText);
+  }
+
   return (
     <>
       <Card className="mb-8 flex flex-col items-center justify-between md:flex-row">
         <div className="mb-4 md:mb-0 md:w-1/4">
           <PageHeading title={'Invoices'} />
+          <Search
+            onSearch={handleSearch}
+            placeholderText='Search by Location Name, Chef Name, Invoice Number and Ship Date'
+            className='w-[600px]'
+          />
         </div>
       </Card>
       <ChefInvoicesList

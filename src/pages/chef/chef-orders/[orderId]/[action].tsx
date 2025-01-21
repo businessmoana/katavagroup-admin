@@ -64,13 +64,13 @@ export default function UpdateChefOrdersPage() {
           >
             {t('form:button-label-back')}
           </Button>
-          {/* <Button
+          <Button
             onClick={print}
             className="me-4"
             type="button"
           >
             Print
-          </Button> */}
+          </Button>
         </div>
       </StickyFooterPanel>
     </>

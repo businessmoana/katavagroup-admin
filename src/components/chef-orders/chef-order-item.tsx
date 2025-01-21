@@ -117,7 +117,7 @@ const OrderItems = ({
           )}
           data={orderItems}
           rowKey="id"
-          scroll={{ x: 1000 }}
+          scroll={{ x: 10 }}
         />
       </div>
     </>

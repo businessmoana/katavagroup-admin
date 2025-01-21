@@ -126,6 +126,13 @@ const LocationList = ({
       align: 'center' as AlignType,
       width: 250,
       onHeaderCell: () => onHeaderClick('location_address'),
+      render: (location_address: any) => (
+        <div className="flex items-start font-medium justify-start">
+          <span className="truncate text-start">
+            {location_address}
+          </span>
+        </div>
+      ),
     },
     {
       title: 'Edit',
@@ -220,7 +227,7 @@ const LocationList = ({
           )}
           data={locations}
           rowKey="id"
-          scroll={{ x: 1000 }}
+          scroll={{ x: 10 }}
         />
       </div>
 

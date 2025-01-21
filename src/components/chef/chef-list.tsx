@@ -79,7 +79,7 @@ const ChefList = ({
       dataIndex: 'id',
       key: 'id',
       align: alignLeft as AlignType,
-      width: 130,
+      width: 70,
       className: 'cursor-pointer',
       onHeaderCell: () => onHeaderClick('id'),
     },
@@ -99,8 +99,15 @@ const ChefList = ({
       dataIndex: 'first_name',
       key: 'first_name',
       align: 'center' as AlignType,
-      width: 180,
+      width: 100,
       onHeaderCell: () => onHeaderClick('first_name'),
+      render: (first_name: any) => (
+        <div className="flex items-start font-medium justify-start">
+          <span className="truncate text-start">
+            {first_name}
+          </span>
+        </div>
+      ),
     },
 
     {
@@ -118,8 +125,15 @@ const ChefList = ({
       dataIndex: 'last_name',
       key: 'last_name',
       align: 'center' as AlignType,
-      width: 180,
+      width: 70,
       onHeaderCell: () => onHeaderClick('last_name'),
+      render: (last_name: any) => (
+        <div className="flex items-start font-medium justify-start">
+          <span className="truncate text-start">
+            {last_name}
+          </span>
+        </div>
+      ),
     },
 
     {
@@ -137,7 +151,7 @@ const ChefList = ({
       dataIndex: 'phone_number',
       key: 'phone_number',
       align: 'center' as AlignType,
-      width: 180,
+      width: 150,
       onHeaderCell: () => onHeaderClick('phone_number'),
     },
     {
@@ -154,7 +168,7 @@ const ChefList = ({
       dataIndex: 'korisnickiNalog',
       key: 'korisnickiNalog',
       align: 'center' as AlignType,
-      width: 180,
+      width: 100,
       onHeaderCell: () => onHeaderClick('role'),
       render: (korisnickiNalog: any) => (
         <div className="flex items-center font-medium justify-center">
@@ -170,7 +184,7 @@ const ChefList = ({
       dataIndex: 'status',
       key: 'status',
       align: 'center' as AlignType,
-      width: 150,
+      width: 100,
       onHeaderCell: () => onHeaderClick('status'),
       render: (status: number) => (
         <Badge
@@ -189,7 +203,7 @@ const ChefList = ({
       dataIndex: 'id',
       key: 'Actions',
       align: 'center' as AlignType,
-      width: 180,
+      width: 200,
       render: (id: string, { status }: Chef) => {
         return (
           <ActionButtons
@@ -229,7 +243,7 @@ const ChefList = ({
           )}
           data={chefs}
           rowKey="id"
-          scroll={{ x: 1000 }}
+          scroll={{ x: 5 }}
         />
       </div>
 

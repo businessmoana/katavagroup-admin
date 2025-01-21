@@ -60,7 +60,6 @@ type FormValues = {
 const roles = [
   { name: 'admin', value: 1 },
   { name: 'manager', value: 2 },
-  { name: 'user', value: 3 },
 ];
 
 type IProps = {

@@ -153,7 +153,7 @@ const ChefsStatementList = ({ list, intervalId }: IProps) => {
           )}
           data={tableData}
           rowKey="s_id"
-          scroll={{ x: 1000 }}
+          scroll={{ x: 10 }}
         />
       </div>
     </>

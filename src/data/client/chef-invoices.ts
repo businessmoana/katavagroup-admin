@@ -11,7 +11,7 @@ export const chefInvoicesClient = {
       language,
     });
   },
-  paginated: ({ search, ...params }: Partial<ChefInvoicesQueryOptions>) => {
+  paginated: ({ ...params }: Partial<ChefInvoicesQueryOptions>) => {
     return HttpClient.get<ChefInvoicesPaginator>(API_ENDPOINTS.CHEFINVOICES, {
       ...params,
     });

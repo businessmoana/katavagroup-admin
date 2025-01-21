@@ -13,6 +13,9 @@ export default function PrintInvoice({ invoice }: { invoice: any }) {
       putOnlyUsedFonts: true,
       floatPrecision: 16, 
     });
+    const formatDateWithSpaces = (dateString: any) => {
+      return dateString.replace(/\//g, ' / ');
+    };
     const tempDiv = document.createElement('div');
     const styles = `
     <style>
@@ -196,10 +199,12 @@ export default function PrintInvoice({ invoice }: { invoice: any }) {
           <tbody>
             <tr>
               <td width="50%"></td>
-              <td width="16%"><b>${text.txt_ordered_date_in}</b><br />${invoice
-                .orderDetails?.order_date}</td>
-              <td width="12%"><b>${text.txt_ship_date_in}</b><br />${invoice
-                .orderDetails?.ship_date}</td>
+              <td width="16%"><b>${text.txt_ordered_date_in}</b><br />${formatDateWithSpaces(
+                invoice.orderDetails?.order_date,
+              )}</td>
+              <td width="12%"><b>${text.txt_ship_date_in}</b><br />${formatDateWithSpaces(
+                invoice.orderDetails?.ship_date,
+              )}</td>
               <td width="10%"></td>
               <td width="12%"><b>${text.txt_terms_in}</b><br />${
                 text.txt_regular_in
@@ -227,8 +232,29 @@ export default function PrintInvoice({ invoice }: { invoice: any }) {
                 <td>${orderItem.product.item_name}</td>
                 <td align="center">${orderItem.productItem.package}</td>
                 <td align="center">${orderItem.kolicina}</td>
-                <td>$${parseFloat(orderItem.price).toFixed(2)}</td>
-                <td>$${parseFloat(orderItem.extended_price).toFixed(2)}</td>
+                <td>
+                  <div style="display:flex;justify-content:space-between;">
+                    <div>$</div>
+                    <div style="align-items:end;text-align:end;padding-right:0;">${orderItem.price.toLocaleString(
+                      'en-US',
+                      {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      },
+                    )}</div>
+                  </div>
+                <td>
+                  <div style="display:flex;justify-content:space-between;">
+                    <div>$</div>
+                    <div style="align-items:end;text-align:end;padding-right:0;">${orderItem.extended_price.toLocaleString(
+                      'en-US',
+                      {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      },
+                    )}</div>
+                  </div>
+                </td>
               </tr>
             `,
               )
@@ -236,10 +262,21 @@ export default function PrintInvoice({ invoice }: { invoice: any }) {
             <tr class="tr_background">
               <td colspan="5"></td>
               <td align="center"><b>${text.txt_extended_amount_in}</b></td>
-              <td><b>$${invoice.orderDetails?.orderItems
-                .map((item: any) => parseFloat(item.extended_price))
-                .reduce((sum: any, a: any) => sum + a, 0)
-                .toFixed(2)}</b></td>
+              <td>
+                <b>
+                  <div style="display:flex;justify-content:space-between;">
+                    <div>$</div>
+                    <div style="align-items:end;text-align:end;padding-right:0;">${invoice.orderDetails?.orderItems
+                      .map((item: any) => parseFloat(item.extended_price))
+                      .reduce((sum: any, a: any) => sum + a, 0)
+                      .toLocaleString('en-US', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })}
+                    </div>
+                  </div>
+                </b>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -247,40 +284,96 @@ export default function PrintInvoice({ invoice }: { invoice: any }) {
           <tbody>
             <tr>
               <td width="64%">
-                <div>${text.txt_footer_line_in}</div>
+                <div style="margin-top:-14px">${text.txt_footer_line_in}</div>
               </td>
               <td width="36%">
                 <table id="table_footer_2" cellspacing="0" cellpadding="2">
                   <tbody>
                     <tr>
                       <td>${text.txt_subtotal_in}</td>
-                      <td>$${invoice.orderDetails?.orderItems
-                        .map((item: any) => parseFloat(item.extended_price))
-                        .reduce((sum: any, a: any) => sum + a, 0)
-                        .toFixed(2)}</td>
+                      <td>
+                        <div style="display:flex;justify-content:space-between;">
+                          <div>$</div>
+                          <div style="align-items:end;text-align:end;padding-right:0;">${invoice.orderDetails?.orderItems
+                            .map((item: any) => parseFloat(item.extended_price))
+                            .reduce((sum: any, a: any) => sum + a, 0)
+                            .toLocaleString('en-US', {
+                              minimumFractionDigits: 2,
+                              maximumFractionDigits: 2,
+                            })}
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>${text.txt_shipping_in}</td>
-                      <td>$${invoice.orderDetails?.shipping}</td>
+                      <td><div style="display:flex;justify-content:space-between;">
+                          <div>$</div>
+                          <div style="align-items:end;text-align:end;padding-right:0;">${invoice.orderDetails?.shipping.toLocaleString(
+                            'en-US',
+                            {
+                              minimumFractionDigits: 2,
+                              maximumFractionDigits: 2,
+                            },
+                          )}
+                          </div>
+                        </div></td>
                     </tr>
                     <tr>
                       <td>${text.txt_pallet_cost_in}</td>
-                      <td>$${invoice.orderDetails?.pallet_cost}</td>
+                      <td>
+                        <div style="display:flex;justify-content:space-between;">
+                          <div>$</div>
+                          <div style="align-items:end;text-align:end;padding-right:0;">${invoice.orderDetails?.pallet_cost.toLocaleString(
+                            'en-US',
+                            {
+                              minimumFractionDigits: 2,
+                              maximumFractionDigits: 2,
+                            },
+                          )}
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>${text.txt_tax_in}</td>
-                      <td>$${invoice.orderDetails?.tax}</td>
+                      <td>
+                        <div style="display:flex;justify-content:space-between;">
+                          <div>$</div>
+                          <div style="align-items:end;text-align:end;padding-right:0;">${invoice.orderDetails?.tax.toLocaleString(
+                            'en-US',
+                            {
+                              minimumFractionDigits: 2,
+                              maximumFractionDigits: 2,
+                            },
+                          )}
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                     <tr id="tr_background_footer">
                       <td><b>${text.txt_total_in}</b></td>
-                      <td><b>$${(
-                        invoice.orderDetails?.orderItems
-                          .map((item: any) => parseFloat(item.extended_price))
-                          .reduce((sum: any, a: any) => sum + a, 0) +
-                        parseFloat(invoice.orderDetails?.shipping) +
-                        parseFloat(invoice.orderDetails?.pallet_cost) +
-                        parseFloat(invoice.orderDetails?.tax)
-                      ).toFixed(2)}</b></td>
+                      <td>
+                        <b>
+                          <div style="display:flex;justify-content:space-between;">
+                            <div>$</div>
+                            <div style="align-items:end;text-align:end;padding-right:0;">${(
+                              invoice.orderDetails?.orderItems
+                                .map((item: any) =>
+                                  parseFloat(item.extended_price),
+                                )
+                                .reduce((sum: any, a: any) => sum + a, 0) +
+                              parseFloat(invoice.orderDetails?.shipping) +
+                              parseFloat(invoice.orderDetails?.pallet_cost) +
+                              parseFloat(invoice.orderDetails?.tax)
+                            ).toLocaleString('en-US', {
+                              minimumFractionDigits: 2,
+                              maximumFractionDigits: 2,
+                            })}
+                            </div>
+                          </div>
+                        </b>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -323,7 +416,7 @@ export default function PrintInvoice({ invoice }: { invoice: any }) {
         setPdfOutput(pdfOutput);
         setGenerating(false);
       },
-      margin: [10, 0, 35, 0],
+      margin: [11, 0, 35, 0],
       html2canvas: {
         scale: 0.265,
       },

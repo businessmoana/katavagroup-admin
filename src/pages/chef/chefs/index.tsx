@@ -32,7 +32,7 @@ export default function AllChefPage() {
   const [orderBy, setOrder] = useState('');
   const [sortedBy, setColumn] = useState<SortOrder>(SortOrder.Desc);
   const { chefs, paginatorInfo, loading, error } = useChefsQuery({
-    limit: 10,
+    limit: 9999,
     page,
     orderBy,
     search: searchTerm,
@@ -56,52 +56,43 @@ export default function AllChefPage() {
   }
   return (
     <>
-      <Card className="mb-8 flex flex-col items-center justify-between md:flex-row">
-        <div className="mb-4 md:mb-0 md:w-1/4">
+      <Card className="mb-8 flex flex-col items-center justify-start md:flex-row gap-8">
+        <div className="mb-4 md:mb-0">
           <PageHeading title={'Chefs'} />
         </div>
-
-        <div className="flex w-full flex-col items-center ms-auto md:w-1/2 md:flex-row gap-2">
+        <div className="flex flex-col items-center md:flex-row gap-2">
           <Search
             onSearch={handleSearch}
             placeholderText={t('form:input-placeholder-search-name')}
+            className='w-[200px]'
           />
-          <BasicFilter
-            className="md:ms-6"
-            filterOptions={[
-              { name: 'Search active', value: true },
-              { name: 'Search inactive', value: false },
-            ]}
-            onFilterFunction={(filterType: FilterOptions) => {
-              setFilterType(filterType?.value!);
-              setPage(1);
-            }}
-            placeholder="filter by active"
-            defaultValue={[{ name: 'Search active', value: true }]}
-          />
-          {locale === Config.defaultLanguage && (
-            <LinkButton
-              href="/chef/chefs/create"
-              className="w-full h-12 md:w-auto md:ms-6"
-            >
-              <span>+ Create Chef</span>
-            </LinkButton>
-          )}
-           {locale === Config.defaultLanguage && (
-            <LinkButton
-              href="/print/print-chef"
-              className="w-full h-12 md:w-auto md:ms-6"
-            >
-              <span>Print</span>
-            </LinkButton>
-          )}
-          {/* <a
-            href="/print/print-chef"
-            className="w-full h-12 md:w-auto md:ms-6"
-            target="_blank"
+          <div className='w-60'>
+            <BasicFilter
+              className="md:ms-6"
+              filterOptions={[
+                { name: 'Search active', value: true },
+                { name: 'Search inactive', value: false },
+              ]}
+              onFilterFunction={(filterType: FilterOptions) => {
+                setFilterType(filterType?.value!);
+                setPage(1);
+              }}
+              placeholder="filter by active"
+              defaultValue={[{ name: 'Search active', value: true }]}
+            />
+          </div>
+          <LinkButton
+            href="/chef/chefs/create"
+            className="h-12 md:w-auto md:ms-6"
           >
-            <Button>Print</Button>
-          </a> */}
+            <span>+ Create Chef</span>
+          </LinkButton>
+          <LinkButton
+            href="/print/print-chef"
+            className=" h-12 md:w-auto md:ms-6"
+          >
+            <span>Print</span>
+          </LinkButton>
         </div>
       </Card>
       <ChefList

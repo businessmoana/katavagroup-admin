@@ -174,10 +174,14 @@ const UpdateOrCreateChefsStatementView = () => {
               {fields.map((item, index) => {
                 return (
                   <div className="flex gap-3 items-center" key={item.id}>
-                    <div className="w-[200px] p-0 sm:pe-2 pt-4">
-                      <select {...register(`saleOtherItems.${index}.date_period`)}>
+                    <div className="w-[200px] p-0 sm:pe-2 pt-2">
+                      {/* <select {...register(`saleOtherItems.${index}.date_period`)}>
                         <option value="Current Period">Current Period</option>
-                      </select>
+                      </select> */}
+                      <Input
+                        {...register(`saleOtherItems.${index}.date_period`)}
+                        variant="outline"
+                      />
                     </div>
                     <div className="w-[650px] p-0 pt-3  sm:ps-2">
                       <Input
@@ -197,9 +201,15 @@ const UpdateOrCreateChefsStatementView = () => {
                       />
                     </div>
                     <div className="w-[200px] p-0 pt-3  sm:ps-2">
-                      <select {...register(`saleOtherItems.${index}.commission`)}>
+                      {/* <select {...register(`saleOtherItems.${index}.commission`)}>
                         <option value="100.00">100%</option>
-                      </select>
+                      </select> */}
+                      <Input
+                        label="Commission"
+                        {...register(`saleOtherItems.${index}.commission`)}
+                        variant="outline"
+                        className="mb-5"
+                      />
                     </div>
                     <button
                       onClick={() => {
@@ -211,9 +221,7 @@ const UpdateOrCreateChefsStatementView = () => {
                         }
                         remove(index);
                       }}
-                      className={`text-red-500 transition duration-200 hover:text-red-600 focus:outline-none ${
-                        index == 0 ? 'invisible' : ''
-                      }`}
+                      className={`text-red-500 transition duration-200 hover:text-red-600 focus:outline-none`}
                       title={t('common:text-delete')}
                     >
                       <TrashIcon width={14} />

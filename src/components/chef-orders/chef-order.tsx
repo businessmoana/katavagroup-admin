@@ -9,17 +9,14 @@ type IProps = {
   chefOrder: any[] | undefined;
 };
 
-const ChefOrder = ({
-  chefOrder
-}: IProps) => {
+const ChefOrder = ({ chefOrder }: IProps) => {
   const router = useRouter();
   const { t } = useTranslation();
   const { alignLeft, alignRight } = useIsRTL();
 
-
   let columns = [
     {
-      title: "ID",
+      title: 'ID',
       dataIndex: 'id',
       key: 'id',
       align: alignLeft as AlignType,
@@ -28,12 +25,12 @@ const ChefOrder = ({
     },
 
     {
-      title: "Location",
+      title: 'Location',
       className: 'cursor-pointer',
       dataIndex: 'location',
       key: 'location',
       align: 'center' as AlignType,
-      width: 180,
+      width: 130,
       render: (location: any) => (
         <div className="flex items-center font-medium justify-center">
           <span className="truncate text-center">
@@ -44,12 +41,12 @@ const ChefOrder = ({
     },
 
     {
-      title: "Chef",
+      title: 'Chef',
       className: 'cursor-pointer',
       dataIndex: 'chef',
       key: 'chef',
       align: 'center' as AlignType,
-      width: 180,
+      width: 150,
       render: (chef: any) => (
         <div className="flex items-center font-medium justify-center">
           <span className="truncate text-center">
@@ -60,7 +57,7 @@ const ChefOrder = ({
     },
 
     {
-      title: "Order date",
+      title: 'Order date',
       className: 'cursor-pointer',
       dataIndex: 'datum',
       key: 'datum',
@@ -75,56 +72,51 @@ const ChefOrder = ({
       ),
     },
     {
-      title: "Number of products",
+      title: 'Number of products',
       className: 'cursor-pointer',
       dataIndex: 'br_proizvoda',
       key: 'br_proizvoda',
       align: 'center' as AlignType,
-      width: 180,
+      width: 150,
     },
     {
-      title: "Materials",
+      title: 'Materials',
       className: 'cursor-pointer',
       dataIndex: 'order_price',
       key: 'order_price',
       align: 'center' as AlignType,
-      width: 180,
-      render: (order_price: any) => (
-        <div className="flex items-center font-medium justify-center">
-          <span className="truncate text-center">
-            $ {order_price}
-          </span>
-        </div>
-      ),
+      width: 130,
+      render: function Render(ukupna_cena: any, record: any) {
+        return (
+          <div className="flex items-center font-medium justify-center">
+            <span className="truncate text-center">
+              ${' '}
+              {(
+                Number(record.ukupna_cena) + Number(record.order_price)
+              ).toFixed(2)}
+            </span>
+          </div>
+        );
+      },
     },
     {
-      title: "Delivery charge",
-      className: 'cursor-pointer',
-      dataIndex: 'sum_price',
-      key: 'sum_price',
-      align: 'center' as AlignType,
-      width: 180,
-      render: (sum_price: any) => (
-        <div className="flex items-center font-medium justify-center">
-          <span className="truncate text-center">
-            $ {sum_price}
-          </span>
-        </div>
-      ),
-    },
-    {
-      title: "Sum price",
+      title: 'Sum price',
       className: 'cursor-pointer',
       dataIndex: 'ukupna_cena',
       key: 'ukupna_cena',
       align: 'center' as AlignType,
-      width: 180,
-      render: function Render(ukupna_cena:any, record: any) {
-        return <div className="flex items-center font-medium justify-center">
-           <span className="truncate text-center">
-             $ {(Number(record.ukupna_cena) + Number(record.order_price)).toFixed(2)}
-           </span>
-         </div>
+      width: 130,
+      render: function Render(ukupna_cena: any, record: any) {
+        return (
+          <div className="flex items-center font-medium justify-center">
+            <span className="truncate text-center">
+              ${' '}
+              {(
+                Number(record.ukupna_cena) + Number(record.order_price)
+              ).toFixed(2)}
+            </span>
+          </div>
+        );
       },
     },
   ];
@@ -145,7 +137,7 @@ const ChefOrder = ({
           )}
           data={[chefOrder]}
           rowKey="id"
-          scroll={{ x: 1000 }}
+          scroll={{ x: 10 }}
         />
       </div>
     </>

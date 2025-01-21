@@ -20,6 +20,8 @@ import { ExternalLinkIcon } from '@/components/icons/external-link';
 import { Tooltip } from '@/components/ui/tooltip';
 import { AddIcon } from '../icons/add';
 import { EyeOff } from '../icons/eye-off-icon';
+import Button from '../ui/button';
+import Badge from '../ui/badge/badge';
 
 type Props = {
   id: string;
@@ -297,24 +299,21 @@ const ActionButtons = ({
           </button>
         ))}
 
-      {chefApproveButton &&
-        (isChefActive ? (
-          <button
-            onClick={() => handleChefStatus(true)}
-            className="transition duration-200 text-accent hover:text-accent-hover focus:outline-none"
-            title="Active Chef"
-          >
-            <CheckMarkCircle width={16} />
-          </button>
-        ) : (
-          <button
-            onClick={() => handleChefStatus(false)}
-            className="text-red-500 transition duration-200 hover:text-red-600 focus:outline-none"
-            title="Diactive Chef ?"
-          >
-            <CloseFillIcon width={16} />
-          </button>
-        ))}
+      {chefApproveButton && (
+        <div
+          className="cursor-pointer mr-1"
+          onClick={() => handleChefStatus(isChefActive == 1)}
+        >
+          <Badge
+            textKey={!isChefActive ? 'DEACTIVATE CHEF' : 'ACTIVATE CHEF'}
+            color={
+              !isChefActive
+                ? 'bg-status-failed/10 text-status-failed'
+                : ' bg-accent/100 !text-white'
+            }
+          />
+        </div>
+      )}
 
       {chefsStatementApproveButton &&
         (isChefsStatementActive ? (
@@ -354,24 +353,23 @@ const ActionButtons = ({
           </button>
         ))}
 
-      {dateIntervalApproveButton &&
-        (isDateIntervalActive ? (
-          <button
-            onClick={() => handleDateIntervalStatus(true)}
-            className="transition duration-200 text-accent hover:text-accent-hover focus:outline-none"
-            title="Active Price Group"
+      {
+        dateIntervalApproveButton && (
+          <div
+            className="cursor-pointer mr-1"
+            onClick={() => handleChefStatus(isDateIntervalActive == 1)}
           >
-            <CheckMarkCircle width={16} />
-          </button>
-        ) : (
-          <button
-            onClick={() => handleDateIntervalStatus(false)}
-            className="text-red-500 transition duration-200 hover:text-red-600 focus:outline-none"
-            title="Diactive Price Group ?"
-          >
-            <CloseFillIcon width={16} />
-          </button>
-        ))}
+            <Badge
+              textKey={!isDateIntervalActive ? 'DEACTIVATE' : 'ACTIVATE'}
+              color={
+                !isDateIntervalActive
+                  ? 'bg-status-failed/10 text-status-failed'
+                  : ' bg-accent/100 !text-white'
+              }
+            />
+          </div>
+        )
+      }
 
       {couponApproveButton &&
         role === SUPER_ADMIN &&
@@ -458,16 +456,18 @@ const ActionButtons = ({
       {detailsUrl && (
         <>
           {id ? (
-            <Link
-              href={detailsUrl}
-              className="text-base transition duration-200 hover:text-heading"
-              title={t('common:text-view')}
-              locale={customLocale}
-            >
-              <Eye className="w-5 h-5" />
-            </Link>
+            <Button>
+              <Link
+                href={detailsUrl}
+                className="text-base transition duration-200 hover:text-heading"
+                title={t('common:text-view')}
+                locale={customLocale}
+              >
+                <Eye className="w-5 h-5" />
+              </Link>
+            </Button>
           ) : (
-            <EyeOff className="w-5 h-5" />
+            <EyeOff className="w-5 h-5" color="red" />
           )}
         </>
       )}

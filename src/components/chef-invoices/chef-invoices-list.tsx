@@ -216,7 +216,7 @@ const ChefInvoicesList = ({
           )}
           data={chefInvoices}
           rowKey="id"
-          scroll={{ x: 1000 }}
+          scroll={{ x: 10 }}
         />
       </div>
 
