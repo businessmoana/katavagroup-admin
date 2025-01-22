@@ -104,7 +104,7 @@ export default function ProductCreateOrUpdateForm({ initialValues }: IProps) {
   });
 
   const onSubmit = async (values: FormValues) => {
-    if(values.package_qty == ""|| values.lot_number == "" || values.width == "" || values.height == "" || values.length == "" || values.weight == "" || values.pallet_ct == "" || values.min_qty_on_hand == "" || values.reordering_amount) {
+    if(values.package_qty == ""|| values.lot_number == "" || values.width == "" || values.height == "" || values.length == "" || values.weight == "" || values.pallet_ct == "" || values.min_qty_on_hand == "" || values.reordering_amount == "") {
       toast.warning('Fill the info');
       console.log(values)
       return;
