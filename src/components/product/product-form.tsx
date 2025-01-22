@@ -104,7 +104,7 @@ export default function ProductCreateOrUpdateForm({ initialValues }: IProps) {
   });
 
   const onSubmit = async (values: FormValues) => {
-    if(values.package_qty == "" || values.vendor_cost == "" || values.lot_number == "" || values.width == "" || values.height == "" || values.length == "" || values.weight == "" || values.pallet_ct == "" || values.min_qty_on_hand == "" || values.reordering_amount) {
+    if(values.package_qty == ""|| values.lot_number == "" || values.width == "" || values.height == "" || values.length == "" || values.weight == "" || values.pallet_ct == "" || values.min_qty_on_hand == "" || values.reordering_amount) {
       toast.warning('Fill the info');
       return;
     }
@@ -117,7 +117,6 @@ export default function ProductCreateOrUpdateForm({ initialValues }: IProps) {
       item_brand: values.item_brand,
       sif_kategorija: values.sif_kategorija.value,
       package_qty: values.package_qty,
-      vendor_cost: values.vendor_cost,
       shelf_life: values.shelf_life,
       lot_number: values.lot_number,
       width: values.width,
