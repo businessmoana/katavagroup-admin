@@ -14,7 +14,11 @@ import { TrashIcon } from '../icons/trash';
 import { AddIcon } from '../icons/add';
 import { toast } from 'react-toastify';
 import Select from '../ui/select/select';
+import SelectInput from '../ui/select-input';
 
+const commissions = [
+  {value:100.00,label:'100%'}
+]
 type FormValues = {
   saleItems: string[];
   saleOtherItems: string[];
@@ -204,11 +208,22 @@ const UpdateOrCreateChefsStatementView = () => {
                       {/* <select {...register(`saleOtherItems.${index}.commission`)}>
                         <option value="100.00">100%</option>
                       </select> */}
+                      {/* <SelectInput
+                        // name="chefLocations"
+                        control={control}
+                        options={commissions!}
+                        {...register(`saleOtherItems.${index}.commission`)}
+                        getOptionLabel={(option: any) => option.label}
+                        getOptionValue={(option: any) => option.value}
+                        isClearable={true}
+                      /> */}
                       <Input
                         label="Commission"
                         {...register(`saleOtherItems.${index}.commission`)}
                         variant="outline"
                         className="mb-5"
+                        type='number'
+                        max={100}
                       />
                     </div>
                     <button
