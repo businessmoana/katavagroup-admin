@@ -79,9 +79,7 @@ export default function ProductCreateOrUpdateForm({ initialValues }: IProps) {
     defaultValues: initialValues
       ? {
           ...initialValues,
-          public: initialValues?.public
-            ? statuses?.find((role) => role.value == initialValues?.public)
-            : { name: '', value: '' },
+          public: statuses?.find((role) => role.value == initialValues?.public),
           sif_kategorija: initialValues?.naziv_kategorije
             ? categories?.find(
                 (category) => category.name == initialValues?.naziv_kategorije,
