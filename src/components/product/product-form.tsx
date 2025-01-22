@@ -28,7 +28,7 @@ type FormValues = {
   item_name: string;
   item_brand: string;
   sif_kategorija: any;
-  p_package_qty: string;
+  package_qty: string;
   vendor_cost: string;
   shelf_life: string;
   lot_number: string;
@@ -113,7 +113,7 @@ export default function ProductCreateOrUpdateForm({ initialValues }: IProps) {
       item_name: values.item_name,
       item_brand: values.item_brand,
       sif_kategorija: values.sif_kategorija.value,
-      p_package_qty: values.p_package_qty,
+      package_qty: values.package_qty,
       vendor_cost: values.vendor_cost,
       shelf_life: values.shelf_life,
       lot_number: values.lot_number,
@@ -211,7 +211,7 @@ export default function ProductCreateOrUpdateForm({ initialValues }: IProps) {
             <div className="w-full p-0 mb-5 sm:mb-0 sm:w-1/2 sm:pe-2">
               <Input
                 label="Units per package"
-                {...register('p_package_qty')}
+                {...register('package_qty')}
                 variant="outline"
                 className="mb-5"
                 type="number"
