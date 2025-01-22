@@ -104,6 +104,11 @@ export default function ProductCreateOrUpdateForm({ initialValues }: IProps) {
   });
 
   const onSubmit = async (values: FormValues) => {
+    if(values.package_qty == "" || values.vendor_cost == "" || values.lot_number == "" || values.width == "" || values.height == "" || values.length == "" || values.weight == "" || values.pallet_ct == "" || values.min_qty_on_hand == "" || values.reordering_amount) {
+      toast.warning('Fill the info');
+      return;
+    }
+
     let input = {
       id: initialValues ? initialValues.id : 0,
       language: router.locale,
@@ -111,20 +116,20 @@ export default function ProductCreateOrUpdateForm({ initialValues }: IProps) {
       item_name: values.item_name,
       item_brand: values.item_brand,
       sif_kategorija: values.sif_kategorija.value,
-      package_qty: values.package_qty || 0,
-      vendor_cost: values.vendor_cost || 0,
+      package_qty: values.package_qty,
+      vendor_cost: values.vendor_cost,
       shelf_life: values.shelf_life,
-      lot_number: values.lot_number || 0,
-      width: values.width || 0,
-      height: values.height || 0,
-      length: values.length || 0,
-      weight: values.weight || 0,
-      ti: values.ti || 0,
-      hi: values.hi || 0,
-      pallet_ct: values.pallet_ct || 0,
-      min_qty_on_hand: values.min_qty_on_hand || 0,
-      reordering_amount: values.reordering_amount || 0,
-      public: values.public.value || 0,
+      lot_number: values.lot_number,
+      width: values.width,
+      height: values.height,
+      length: values.length,
+      weight: values.weight,
+      ti: values.ti,
+      hi: values.hi,
+      pallet_ct: values.pallet_ct,
+      min_qty_on_hand: values.min_qty_on_hand,
+      reordering_amount: values.reordering_amount,
+      public: values.public.value,
       note: values.note,
       item_image: image,
     };
