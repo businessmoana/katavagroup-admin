@@ -31,12 +31,12 @@ const ActiveChefView = () => {
       onCancel={closeModal}
       onDelete={handleActive}
       deleteBtnLoading={loading}
-      deleteBtnText="Active"
+      deleteBtnText="Activate"
       icon={<CheckMarkCircle className="w-10 h-10 m-auto mt-4 text-accent" />}
       deleteBtnClassName="!bg-accent focus:outline-none hover:!bg-accent-hover focus:!bg-accent-hover"
       cancelBtnClassName="!bg-red-600 focus:outline-none hover:!bg-red-700 focus:!bg-red-700"
-      title="Active Chef"
-      description="Are you want to active the chef?"
+      title="Activate Chef"
+      description="Are you want to activate the chef?"
     />
   );
 };
